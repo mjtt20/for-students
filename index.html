@@ -5,79 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Poetry Website</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #3b5998;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-        .paragraph,
-        .border {
-            margin-bottom: 20px;
-            border: 2px solid gray;
-            border-radius: 5px;
-            padding: 15px;
-        }
-
-        .paragraph p {
-            margin-bottom: 10px;
-        }
-
-        .video {
-            margin-bottom: 20px;
-        }
-
-        .video img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        
-
-        /* Media Query for Responsive Design */
-        @media (max-width: 600px) {
-            .container {
-                padding: 0 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
 </head>
 
 <body>
 
-    <header>
-        <h1>Hello Apon!</h1>
-    </header>
 
-    <div class="container">
+    <!-- nav bar -->
 
-        <div class="paragraph">
+
+    <nav class="navbar navbar-expand-lg bg-dark text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="recorded-video.html">recorded video</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <!-- add more list -->
+              
+            </ul>
+            <h1>Happy learning!</h1>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <div class="container mt-5">
+
+        <div class="border border-3 rounded p-5">
             <h1>How to arang my reding room</h1>
             <p>A reading room is a place for reading. It is an appropriate place for studying. Every student must have a
                 separate reading room. I have also a separate reading room. It is the corner of my house. It faces the
@@ -105,17 +66,21 @@
 
         <br><br><br><br><br>
 
-        <div class="video .border">
-            <a href="https://www.youtube.com/watch?v=nDqHIwLDOyA" target="_blank">
-                <img src="https://img.youtube.com/vi/nDqHIwLDOyA/maxresdefault.jpg" alt="YouTube Video Preview">
-            </a>
+        <div>
+            <h1 class="border-left">21 Feb lecture</h1>
+            <div class="video .border">
+                <a href="https://www.youtube.com/watch?v=nDqHIwLDOyA" target="_blank">
+                    <img src="https://img.youtube.com/vi/nDqHIwLDOyA/maxresdefault.jpg" alt="YouTube Video Preview">
+                </a>
+            </div>
         </div>
 
 
         <!-- Add more posts as needed -->
 
-    </div>
 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
 </html>
