@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<style>
+    .unique {
+        background-color: black;
+        color: white;
+        border: 2px black solid;
+    }
+
+    .unique:hover {
+        color: black;
+        background-color: white;
+        border: 2px black solid;
+
+    }
+</style>
+
+<body>
+
+
+    <div class="container">
+        <h1>3.2</h1>
+        <div class="row">
+            <div class="col">
+                <div class="position-relative">
+                    <img src="images/3.2%201.png" class="img-fluid" alt="Responsive Image">
+                    <button id="downloadButton"
+                        class="btn unique position-absolute top-0 start-0 mt-3 ms-3">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="container">
+        <h1>3.3</h1>
+        <div class="row">
+            <div class="col">
+                <div class="position-relative">
+                    <img src="images/3.2 2.png" class="img-fluid" alt="Responsive Image">
+                    <button id="downloadButton2"
+                        class="btn unique position-absolute top-0 start-0 mt-3 ms-3">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+
+    <div class="container">
+        <h1>3.3</h1>
+        <div class="row">
+            <div class="col">
+                <div class="position-relative">
+                    <img src="images/heap.png" class="img-fluid" alt="Responsive Image">
+                    <button id="downloadButton3"
+                        class="btn unique position-absolute top-0 start-0 mt-3 ms-3">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#downloadButton').click(function () {
+                // Replace 'images/3.2%201.png' with the correct path of the image you want to download
+                var imageUrl = 'images/3.2%201.png';
+                var a = document.createElement('a');
+                a.href = imageUrl;
+                a.download = 'image.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        });
+
+        $(document).ready(function () {
+            $('#downloadButton2').click(function () {
+                // Replace 'images/3.2%201.png' with the correct path of the image you want to download
+                var imageUrl = 'images/3.2 2.png';
+                var a = document.createElement('a');
+                a.href = imageUrl;
+                a.download = 'image.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        });
+
+        $(document).ready(function () {
+            $('#downloadButton3').click(function () {
+                // Replace 'images/3.2%201.png' with the correct path of the image you want to download
+                var imageUrl = 'images/heap.png';
+                var a = document.createElement('a');
+                a.href = imageUrl;
+                a.download = 'image.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        });
+    </script>
+</body>
+
+</html>
