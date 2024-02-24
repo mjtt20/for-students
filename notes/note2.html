@@ -30,11 +30,11 @@
 
 
     <div class="container">
-        <h1>3.2</h1>
+        <h1>3.4</h1>
         <div class="row">
             <div class="col">
                 <div class="position-relative">
-                    <img src="images/3.2%201.png" class="img-fluid" alt="Responsive Image">
+                    <img src="images/3.4 1.png" class="img-fluid" alt="Responsive Image">
                     <button id="downloadButton"
                         class="btn unique position-absolute top-0 start-0 mt-3 ms-3">Download</button>
                 </div>
@@ -45,11 +45,11 @@
     <br><br><br><br><br>
 
     <div class="container">
-        <h1>3.3</h1>
+        <h1>3.4</h1>
         <div class="row">
             <div class="col">
                 <div class="position-relative">
-                    <img src="images/3.2 2.png" class="img-fluid" alt="Responsive Image">
+                    <img src="images/3.4 2.png" class="img-fluid" alt="Responsive Image">
                     <button id="downloadButton2"
                         class="btn unique position-absolute top-0 start-0 mt-3 ms-3">Download</button>
                 </div>
@@ -61,17 +61,34 @@
 
 
     <div class="container">
-        <h1>3.3</h1>
+        <h1>3.5</h1>
         <div class="row">
             <div class="col">
                 <div class="position-relative">
-                    <img src="images/heap.png" class="img-fluid" alt="Responsive Image">
+                    <img src="images/3.5 1.png" class="img-fluid" alt="Responsive Image">
                     <button id="downloadButton3"
                         class="btn unique position-absolute top-0 start-0 mt-3 ms-3">Download</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <br><br><br><br><br>
+
+    <div class="container">
+        <h1>3.5</h1>
+        <div class="row">
+            <div class="col">
+                <div class="position-relative">
+                    <img src="images/3.5 2.png" class="img-fluid" alt="Responsive Image">
+                    <button id="downloadButton2"
+                        class="btn unique position-absolute top-0 start-0 mt-3 ms-3">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -80,7 +97,7 @@
         $(document).ready(function () {
             $('#downloadButton').click(function () {
                 // Replace 'images/3.2%201.png' with the correct path of the image you want to download
-                var imageUrl = 'images/3.2%201.png';
+                var imageUrl = 'images/3.4 1.png';
                 var a = document.createElement('a');
                 a.href = imageUrl;
                 a.download = 'image.png';
@@ -93,7 +110,7 @@
         $(document).ready(function () {
             $('#downloadButton2').click(function () {
                 // Replace 'images/3.2%201.png' with the correct path of the image you want to download
-                var imageUrl = 'images/3.2 2.png';
+                var imageUrl = 'images/3.4 2.png';
                 var a = document.createElement('a');
                 a.href = imageUrl;
                 a.download = 'image.png';
@@ -106,7 +123,21 @@
         $(document).ready(function () {
             $('#downloadButton3').click(function () {
                 // Replace 'images/3.2%201.png' with the correct path of the image you want to download
-                var imageUrl = 'images/heap.png';
+                var imageUrl = 'images/3.5 1.png';
+                var a = document.createElement('a');
+                a.href = imageUrl;
+                a.download = 'image.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('#downloadButton').click(function () {
+                // Replace 'images/3.2%201.png' with the correct path of the image you want to download
+                var imageUrl = 'images/3.5 2.png';
                 var a = document.createElement('a');
                 a.href = imageUrl;
                 a.download = 'image.png';
